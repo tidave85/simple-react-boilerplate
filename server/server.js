@@ -7,7 +7,7 @@ const Path = require('path');
 App.use('/public', Express.static('./public'));
 
 App.get('/', (req, res, next) => {
-    res.sendfile('./index.html');
+    res.sendfile('./public/index.html');
 });
 
 App.listen(Config.port, () => {
